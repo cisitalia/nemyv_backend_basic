@@ -45,6 +45,7 @@ const login = async (req, res, next) => {
 const tokenTest = async (req, res, next) => {
     try {
         // jwt.middleware 에 의해 req.user에 유저정보가 있을 것임
+        // console.log(req.user)
         return response(res, req.user)
     } catch (e) {
         next(e)

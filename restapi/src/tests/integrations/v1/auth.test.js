@@ -79,7 +79,6 @@ describe('로그인 테스트', () => {
             .set('Authorization', `Bearer ${token}`)
 
         expect(response.body.data.email).toBe(userData.email)
-
         console.log(response.body.data)
     })
 })
